@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital ink</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>DIGITAL INK</h1>
+        <div class="container">
+            <canvas id="signature-pad" width="400" height="200"></canvas>
+            <div class="side-controls">
+                <div class="color-picker">
+                    <label for="color">Ink Color: </label>
+                    <input type="color" id="color" value="#000000">
+                </div>
+                <div class="thickness-control">
+                    <label for="thickness">Ink Thickness: </label>
+                    <input type="range" id="thickness" min="1" max="10" value="2">
+                </div>
+                <div class="mode-switch">
+                    <label for="mode">Mode: </label>
+                    <select id="mode">
+                        <option value="ink">Ink</option>
+                        <option value="eraser">Eraser</option>
+                    </select>
+                </div>
+                <div class="eraser-thickness-control">
+                    <label for="eraser-thickness">Eraser Thickness: </label>
+                    <input type="range" id="eraser-thickness" min="10" max="50" value="20">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="clear-button">Clear</button>
+                <button id="undo-button">Undo</button>
+                <button id="download-button">Download</button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>

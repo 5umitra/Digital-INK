@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.2) 100%), radial-gradient(at top center, rgba(255,255,255,0.45) 0%, rgba(0,0,0,0.45) 120%) #6c6c6c;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(145deg, #f8f8f8, #e0e0e0);
+    border-radius: 15px;
+    width: 900px;
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#signature-pad {
+    border: 2px solid #333;
+    background-color: #fff;
+    border-radius: 8px;
+    cursor: crosshair;
+    width: 400px;
+    height: 325px;
+}
+
+.side-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.side-controls > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.side-controls label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.side-controls input, .side-controls select {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 120px;
+}
+
+#mode {
+    border: 1px solid #333;
+    background-color: #fff;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: auto;
+}
+
+.buttons button {
+    width: 120px; /* Set a fixed width for all buttons */
+    height: 60px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Adds space between buttons */
+    text-align: center;
+    font-size: 17px;
+}
+
+#clear-button {
+    background-color: grey;
+}
+
+#undo-button {
+    background-color: grey;
+}
+
+#download-button {
+    background-color: #00b519;
+}
+
+.buttons button:last-child {
+    margin-bottom: 0; /* Removes margin from the last button */
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
