@@ -16,7 +16,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    margin: 0;
 }
 
 .main {
@@ -29,7 +28,7 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background: linear-gradient(145deg, #f8f8f8, #e0e0e0);
     border-radius: 15px;
-    width: 900px;
+    width: 1100px;
 }
 
 .main h1 {
@@ -50,8 +49,8 @@ body {
     background-color: #fff;
     border-radius: 8px;
     cursor: crosshair;
-    width: 400px;
-    height: 325px;
+    width: 600px;
+    height: 400px;
 }
 
 .side-controls {
@@ -100,18 +99,19 @@ body {
 }
 
 .buttons button {
-    width: 120px; /* Set a fixed width for all buttons */
+    width: 150px;
     height: 60px;
     padding: 10px 15px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     color: #fff;
     font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px; /* Adds space between buttons */
+    font-size: 18px;
     text-align: center;
-    font-size: 17px;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.7);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 #clear-button {
@@ -126,10 +126,18 @@ body {
     background-color: #00b519;
 }
 
-.buttons button:last-child {
-    margin-bottom: 0; /* Removes margin from the last button */
+.buttons button:hover {
+    transform: translateY(-5px);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), -2px -2px 6px rgba(255, 255, 255, 0.7);
 }
 
-.buttons button:hover {
-    opacity: 0.9;
+.buttons button:active {
+    transform: translateY(2px);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), -1px -1px 4px rgba(255, 255, 255, 0.7);
 }
+
+/* Cursor animation */
+#signature-pad {
+    cursor: url('https://cdn-icons-png.flaticon.com/512/1067/1067738.png'), auto;
+}
+
